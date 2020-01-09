@@ -24,6 +24,16 @@
       將目前 session 中記錄的 user 的 notes 顯示在下列表格中
       (20%)
       -->
+      <%
+        
+        while (rs.next()) {                    
+            out.println("<tr>");
+            out.println("<td>"+getString("NoteHeader")+"</td>");
+            out.println("<td>"+getString("Note")+"</td>");
+            out.println("</tr>");
+        }
+      %>
+            
       <table border="1" style="width: 90%">
           <thead>
               <tr>
